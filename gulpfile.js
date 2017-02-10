@@ -46,7 +46,7 @@ gulp.task('watchTask', function(){
 });
 
 
-gulp.task('default',['sass','serverStart','watchTask']);
+gulp.task('default',['sass','ejs','serverStart','watchTask']);
 
 
 
