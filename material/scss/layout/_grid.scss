@@ -1,0 +1,87 @@
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.row{
+  margin-bottom: 30px;
+}
+
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+    padding: 15px;
+
+  img{
+    max-width:100%;
+    height:auto;
+    margin-bottom: 15px;
+  }
+}
+
+
+@for $i from 1 through 12 {
+  .c#{$i} {
+    width:#{$i*8.3333333%};
+  }
+}
+
+
+@media #{$breakSM} {
+@for $i from 1 through 12 {
+  .c#{$i}-sm {
+    width:#{$i*8.3333333%};
+  }
+  }
+}
+
+@media #{$breakM} {
+@for $i from 1 through 12 {
+  .c#{$i}-m {
+    width:#{$i*8.3333333%};
+  }
+}
+}
+
+
+@media #{$breakS} {
+@for $i from 1 through 12 {
+  .c#{$i}-s {
+    width:#{$i*8.3333333%};
+  }
+}
+}
+
+
+
+@for $i from 1 through 12 {
+  .of#{$i} {
+    margin-left:#{$i*8.3333333%};
+  }
+}
+
+@media #{$breakSM} {
+@for $i from 1 through 12 {
+  .of#{$i}-sm {
+    margin-left:#{$i*8.3333333%};
+  }
+}
+}
+
+
+@media #{$breakM} {
+@for $i from 1 through 12 {
+  .of#{$i}-m {
+    margin-left:#{$i*8.3333333%};
+  }
+}
+}
+
+
+@media #{$breakS} {
+@for $i from 1 through 12 {
+  .of#{$i}-s {
+    margin-left:#{$i*8.3333333%};
+  }
+}
+}

@@ -1,0 +1,101 @@
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Margin & Padding */
+
+
+@for $i from 0 through 6 {
+
+  .mb#{$i} { margin-bottom:#{$i * 15}px; }
+  .mt#{$i} { margin-top:#{$i * 15}px; }
+  .ml#{$i} { margin-left:#{$i * 15}px; }
+  .mr#{$i} { margin-right:#{$i * 15}px; }
+
+  .pb#{$i} { padding-bottom:#{$i * 15}px; }
+  .pt#{$i} { padding-top:#{$i * 15}px; }
+  .pl#{$i} { padding-left:#{$i * 15}px; }
+  .pr#{$i} { padding-right:#{$i * 15}px; }
+
+}
+
+
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid map-get($c-base, bd-light); }
+
+.fr{float:right;}
+.fl{float:left;}
+
+.bb{
+  border-bottom:1px solid map-get($c-base, bd);
+  margin-bottom: 45px;
+  padding-bottom: 30px;
+}
+
+.dbb{
+  border-bottom:1px dashed map-get($c-base, bd);
+  margin-bottom: 45px;
+  padding-bottom: 30px;
+}
+
+.wfit{
+  width:100%;
+}
+
+.invis{
+  display:none;
+  visibility:hidden;
+}
+
+.invis-l{
+@media #{$breakL} {
+  display:none;
+  visibility:hidden;
+}
+}
+
+.invis-s{
+@media #{$breakS} {
+  display:none;
+  visibility:hidden;
+}
+}
+
+
+
+.vis{
+  display:inline-block;
+  visibility:visible;
+}
+
+.vis-l{
+@media #{$breakS} {
+  display:inline-block;
+  visibility:hidden;
+}
+}
+
+.vis-s{
+@media #{$breakL} {
+  display:inline-block;
+  visibility:hidden;
+}
+}
+
+
+/* Clearing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Self Clearing Goodness */
+.container:after,
+.row:after,
+.cf {
+  content: "";
+  display: table;
+  clear: both; }
+

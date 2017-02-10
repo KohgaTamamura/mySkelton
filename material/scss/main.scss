@@ -1,0 +1,109 @@
+// @import 'libs/mixins';
+// @import url('font-awesome.min.css');
+// @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
+
+
+/*reset*/
+
+@import 'libs/normalize';
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
+/*vars 仕組みでなづける*/
+
+$c-base: (
+  bg: #FFF,
+  bg-light: #F1F1F1,
+  txt: #222,
+  txt-light: #999,
+  bd: #222,
+  bd-light: #ccc,
+  link: #F00,
+  link-h: #999,
+);
+
+
+$c-accent: (
+  bg: #F00,
+  bg-light: #F00,
+  txt: #F00,
+  txt-light: #999,
+  bd: #F00,
+  bd-light: #F00,
+  lik: #F00,
+  lik-h: #F00,
+);
+
+
+$c-btn: (
+  bg: #F00,
+  bg-h: #999,
+  txt: #FFF,
+  lik: #FFF,
+  lik-h: #FFF,
+);
+
+$c-btn-accent: (
+  bg: transparent,
+  txt: #F00,
+  lik: #F00,
+  lik-h: #999,
+  bd:#F00,
+  bd-h:#999,
+);
+
+
+$breakS:  "only screen and (max-width:640px)";
+$breakM:  "only screen and (min-width:641px) and (max-width:959px)";
+$breakSM:  "only screen and (max-width:959px)";
+$breakL:  "only screen and (min-width:960px)";
+
+
+
+/*Components*/
+@import 'components/typo';
+@import 'components/button';
+@import 'components/form';
+@import 'components/icon';
+@import 'components/image';
+@import 'components/list';
+@import 'components/table';
+
+
+/* Grid & Frame */
+
+@import 'layout/grid';
+@import 'layout/foundation';
+
+
+/* Parts */
+
+@import 'layout/header';
+@import 'layout/navi';
+@import 'layout/footer';
+@import 'layout/utility';
+
+
+/*etc*/
+@import 'etc/touch';
+
+
+// @import 'size/xsmall';
+
+
+/*device variation*/
+
+
+
+
+
+
+
+

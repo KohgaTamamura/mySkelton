@@ -1,0 +1,90 @@
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ul {
+  list-style: none;
+ word-wrap: break-word;
+ }
+
+ol {
+  list-style: decimal inside; }
+
+ol, ul {
+  padding-left: 0;
+  margin-top: 0;
+  a{
+    text-decoration: none;
+  }
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%; }
+
+li {margin-bottom: 1rem; }
+
+
+ul.listed{
+  list-style-position: inside;
+  list-style:none;
+
+li{
+  padding-left: 1em;
+}
+
+li:before {
+    content: "-";
+    display: block;
+    float: left;
+    margin-left: -1em;
+    width: 1em;
+    text-align: left;
+    color:map-get($c-base, txt-light);
+}
+
+}
+
+
+ul.lined{
+  list-style-position: inside;
+  list-style:none;
+
+li{
+  border-bottom: 1px solid map-get($c-base, bd-light);
+  padding: 0 0 1rem 0;
+}
+
+li:last-child{
+  border-bottom: none;
+}
+
+}
+
+
+
+ul.hlist{
+  overflow: hidden;
+  li{
+  display: inline-block;
+  float: left;
+  width:auto;
+  text-align: center;
+
+  &:after {
+  display: inline-block;
+  content:"|";
+  padding: 0 1rem;
+  color:map-get($c-base, txt-light);
+  font-size:85%;
+  }
+
+  &:last-child{
+  &:after {
+  content:"";
+  padding: 0;
+  }
+  }
+  }
+}

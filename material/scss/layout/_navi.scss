@@ -1,0 +1,147 @@
+#gnav {
+
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    // -moz-transition: -moz-transform 0.5s ease;
+    // -webkit-transition: -webkit-transform 0.5s ease;
+    // -ms-transition: -ms-transform 0.5s ease;
+    // transition: transform 0.5s ease;
+
+    z-index: 10001;
+    background:map-get($c-base, txt);
+}
+
+#gnav::-webkit-scrollbar {
+  display: none;
+  box-sizing:border-box;
+}
+
+#logo{
+  position:absolute;
+  left:0;
+  top:0;
+  height:60px;
+  line-height: 60px;
+  @extend .h5;
+  padding:0 30px;
+  color: #FFF;
+  text-decoration: none;
+  @media #{$breakS} {
+      padding:0 15px;
+  }
+}
+
+#btn-nav{
+    z-index: 10002;
+    position: fixed;
+    right:0px;
+    top:0;
+    width:60px;
+    height:60px;
+    line-height: 60px;
+    text-align: center;
+    color:map-get($c-btn, txt);
+    background:map-get($c-btn, bg);
+    display:none;
+}
+
+#btn-nav span{
+  &:before{
+      content:'☓';
+  }
+}
+
+#btn-nav span.closed{
+  &:before{
+      content:'MENU';
+  }
+}
+
+#gnav-inr{
+  position:relative;
+  width: 100%;
+  max-width: 960px;
+  padding: 0 30px;
+  margin: 0 auto;
+    @extend .cf;
+}
+
+#nav{
+
+  @extend .cf;
+  overflow: hidden;
+  float:right;
+
+  li{
+  display: inline-block;
+  float: left;
+  width: auto;
+  text-align: center;
+  margin: 0;
+  }
+
+  a{
+    display: block;
+    width:100%;
+    word-wrap: break-word;
+    line-height:60px;
+    height:60px;
+    @extend .boxlink;
+
+  }
+}
+
+
+@media #{$breakS} {
+
+
+  #gnav {
+    width:100%;
+    min-height:60px;
+    overflow:visible;
+    // overflow-y: auto;
+    position: fixed;
+    right:0px;
+    top:0;
+    background-attachment:  scroll;
+    background-position:  top right, center center;
+    background-size:    auto,   cover;
+
+
+  #nav{
+    display:none;
+    position:absolute;
+    top:60px;
+    left:0;
+    padding:0;
+    width:100%;
+      li{
+        display:block;
+        width:33.33333vw;
+        height:33.33333vw;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      a{
+         display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        width:33.33333vw;
+        height:33.33333vw;
+        line-height:1.5em;
+        // line-height:33.333vw;
+      }
+  }
+  }
+
+
+  #btn-nav{
+    display: block;
+}
+
+}
+

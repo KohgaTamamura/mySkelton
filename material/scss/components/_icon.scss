@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "icon";
+  src: url('/css/fonts/icon.eot');
+  src: url('/css/fonts/icon.eot?#iefix') format('eot'),
+    // url('/css/fonts/icon.woff2') format('woff2'),
+    url('/css/fonts/icon.woff') format('woff'),
+    url('/css/fonts/icon.ttf') format('truetype'),
+    url('/css/fonts/icon.svg#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]{
+&:before {
+  display: inline-block;
+  font-family: "icon";
+  font-style: normal;
+  font-weight: normal;
+  padding-right: .5rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: -5%;
+}
+}
+
+
+.iconlg {
+  font-size: 1.3333333333333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.icon2x { font-size: 2em; }
+.icon3x { font-size: 3em; }
+.icon4x { font-size: 4em; }
+.icon5x { font-size: 5em; }
+.iconfw {
+  width: 1.2857142857142858em;
+  text-align: center;
+}
+
+.icon-1:before { content: "\EA01" }
+.icon-test:before { content: "\EA02" }
