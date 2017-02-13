@@ -15,9 +15,7 @@
             box-sizing: border-box;
 }
 
-
 /*vars 仕組みでなづける*/
-
 $c-base: (
   bg: #FFF,
   bg-light: #F1F1F1,
@@ -28,7 +26,6 @@ $c-base: (
   link: #F00,
   link-h: #999,
 );
-
 
 $c-accent: (
   bg: #F00,
@@ -93,17 +90,12 @@ $breakL:  "only screen and (min-width:960px)";
 
 /*etc*/
 @import 'etc/touch';
-
+@import 'libs/js-flickity';
 
 // @import 'size/xsmall';
 
 
 /*device variation*/
-
-
-
-
-
 
 
 

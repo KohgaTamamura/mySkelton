@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>Stay Simple</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+
+<body>
+
+
+
+
+
+  <section id="gnav" >
+  <div id="gnav-inr">
+  <a id="logo" href="">Stay Simple</a>
+  <nav id="nav">
+    <ul >
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="icon.html">Icons</a></li>
+      <li><a href="js.html">Js Library</a></li>
+    </ul>
+  </nav>
+  </div>
+  </section>
+
+  <a id="btn-nav"><span class="closed"></span></a>
+
+
+
+
+
+
+
+
+
+  <div class="container">
+
+    <div class="row bb">
+      <div class="c12 columns">
+        <h1>js plugins</h1>
+      </div>
+    </div>
+
+    
+    <div class="row">
+<div class="c12 columns">
+  <h2 >Flickity Image Slider</h2>
+  <p><a href="http://flickity.metafizzy.co/">http://flickity.metafizzy.co/</a></p>
+</div>
+  <div class="c12 columns main-carousel">
+    <div class="carousel-cell" data-flickity-bg-lazyload="http://dummyimage.com/800x600/4d494d/686a82.gif&text=img1"></div>
+    <div class="carousel-cell" data-flickity-bg-lazyload="http://dummyimage.com/801x601/4d494d/686a82.gif&text=img2"></div>    
+    <div class="carousel-cell" data-flickity-bg-lazyload="http://dummyimage.com/802x602/4d494d/686a82.gif&text=img3"></div>
+    <div class="carousel-cell" data-flickity-bg-lazyload="http://dummyimage.com/803x603/4d494d/686a82.gif&text=img4"></div>
+  </div>
+
+  <script src="js/vendar/flickity.pkgd.min.js"></script>
+  <script src="js/vendar/bg-lazyload.js"></script>
+
+  <script type="text/javascript">
+
+    $('.main-carousel').flickity({
+      // options
+      cellAlign: 'center',
+      contain: true,
+      lazyLoad: true,
+      bgLazyLoad: true,
+      bgLazyLoad: 1
+    });
+
+  </script>
+
+</div>
+    <div class="row">
+<div class="c12 columns">
+
+<h3>Lazy Load</h3>
+<p><a href="https://www.appelsiini.net/projects/lazyload"></a></p>
+
+<img class="lazy" data-original="http://dummyimage.com/2000x1000/4d494d/686a82.gif&text=Lazy Load" />
+
+  <script src="js/vendar/lazyload.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      $("img.lazy").lazyload({
+          effect : "fadeIn"
+      });
+    });
+  </script>
+
+</div>
+
+</div>
+</body>
+</html>

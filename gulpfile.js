@@ -40,9 +40,8 @@ gulp.task('ejs', function(){
 
 
 gulp.task('watchTask', function(){
-  gulp.watch('./material/scss/*.scss', ['sass']);
-  gulp.watch('./material/scss/**/*.scss', ['sass']);  
-  gulp.watch(['*.ejs','./material/ejs/*.ejs','./material/ejs/common/*.ejs'], ['ejs']);
+  gulp.watch(['.scss', './material/scss/*.scss','./material/scss/**/*.scss'], ['sass']);
+  gulp.watch(['*.ejs','./material/ejs/*.ejs','./material/ejs/**/*.ejs'], ['ejs']);
 });
 
 
@@ -70,8 +69,6 @@ gulp.task('iconfont', function(){
         fontPath: '/css/fonts/', // set path to font (from your CSS file if relative)
         className: 'icon' // set class name in your CSS
       };
-
-      console.log(options);
 
 
       gulp.src('./material/icon/templates/fontawesome-style.scss')
