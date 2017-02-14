@@ -1400,7 +1400,9 @@ hr {
 .row:after,
 .cf,
 #gnav-inr,
-#nav {
+#nav,
+.tabs,
+.tab--nav {
   content: "";
   display: table;
   clear: both; }
@@ -1578,5 +1580,41 @@ http://flickity.metafizzy.co
 */
 .carousel--not-counting .carousel-cell:before {
   content: none; }
+
+/* tabs */
+.tabs {
+  position: relative; }
+
+.tabs ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+.tabs ul.tab--nav li {
+  display: inline-block;
+  float: left;
+  margin-bottom: 0; }
+
+.tabs ul.tab--nav li.active {
+  border-bottom: 1px solid #F00; }
+
+.tabs ul.tab--nav a {
+  display: block;
+  width: 100%;
+  padding: 15px 30px; }
+
+.tabs .tab--panels {
+  padding: 30px 0;
+  margin-top: -1px;
+  border-top: 1px solid #222; }
+
+.tabs .tab--panels div {
+  display: none;
+  opacity: 0; }
+
+.tabs .tab--panels div.active {
+  display: block;
+  opacity: 0; }
 
 /*device variation*/
